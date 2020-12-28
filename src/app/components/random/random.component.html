@@ -1,0 +1,27 @@
+<div>
+  <div class="query-container">
+      <label class="field">Name</label>
+      <input class="field" [(ngModel)]="name">
+      <label class="field">Category</label>
+      <ng-select #categories="ngModel"
+                 class="selector"
+                 id="categories"
+                 name="categories"
+                 [(ngModel)]="categoryModel"
+                 (change)="handleSelectChange($event)"
+                 bindLabel="name"
+                 bindId="id"
+                 [items]="categories$ | async"
+                 [addTag]="false"
+                 [multiple]="true"
+                 [hideSelected]="true"
+                 appendTo="body">
+      </ng-select>
+      <button type="button" class="field go-button" (click)="handleQuery()">Go</button>
+  </div>
+  <div>
+    <mat-card>
+      <div *ngIf="(this.random$ | async)?.value">{{(this.random$ | async)?.value}}</div>
+    </mat-card>
+  </div>
+</div>

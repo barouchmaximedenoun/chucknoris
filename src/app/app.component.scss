@@ -1,0 +1,43 @@
+.banner {
+  /*background-image: url('../assets/images.jpeg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;*/
+  // background-color: #00fff329;
+  height: 300px;
+}
+.top-panel {
+  background-image: url('../assets/images.jpeg');
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+}
+.bottom-panel{
+  margin-top: -13%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
+  background-color: white;
+}
+.chuck-io-image {
+  width: 118px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-container {
+  width: 80%;
+  height: 100%;
+}
